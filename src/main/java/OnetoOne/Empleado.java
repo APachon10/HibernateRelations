@@ -25,8 +25,6 @@ public class Empleado {
 	private String apellido;
 	@Column(name="dni")
 	private String dni;
-	@Column(name="fecha_nacimiento")
-	private Date fecha_nacimiento;
 	@Column(name="email")
 	private String mail;
 	
@@ -38,12 +36,11 @@ public class Empleado {
 	public Empleado() {
 		super();
 	}
-	public Empleado(String nombre, String apellido, String dni, Date fecha_nacimiento, String mail,Ficha_empleado ficha_empleado) {
+	public Empleado(String nombre, String apellido, String dni, String mail,Ficha_empleado ficha_empleado) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.dni = dni;
-		this.fecha_nacimiento = fecha_nacimiento;
 		this.mail = mail;
 		this.ficha_empleado=ficha_empleado;
 	}
@@ -62,9 +59,6 @@ public class Empleado {
 	public String getDni() {
 		return dni;
 	}
-	public Date getFecha_nacimiento() {
-		return fecha_nacimiento;
-	}
 	public String getMail() {
 		return mail;
 	}
@@ -80,9 +74,6 @@ public class Empleado {
 	public void setDni(String dni) {
 		this.dni = dni;
 	}
-	public void setFecha_nacimiento(Date fecha_nacimiento) {
-		this.fecha_nacimiento = fecha_nacimiento;
-	}
 	public void setMail(String mail) {
 		this.mail = mail;
 	}
@@ -96,7 +87,7 @@ public class Empleado {
 	@Override
 	public String toString() {
 		return "Empleado [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni
-				+ ", fecha_nacimiento=" + fecha_nacimiento + ", mail=" + mail + ", ficha_empleado=" + ficha_empleado
+				+  ", mail=" + mail + ", ficha_empleado=" + ficha_empleado
 				+ "]";
 	}
 }

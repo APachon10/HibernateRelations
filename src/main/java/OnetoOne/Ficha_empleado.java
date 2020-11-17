@@ -22,7 +22,7 @@ public class Ficha_empleado {
 	public Ficha_empleado() {
 		super();
 	}
-	public Ficha_empleado(String nombre, String apellido, String email,Empleado e) {
+	public Ficha_empleado(Empleado e) {
 		super();
 		this.e=e;
 	}
