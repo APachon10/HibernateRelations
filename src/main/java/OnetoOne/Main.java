@@ -1,10 +1,5 @@
 package OnetoOne;
 
-import java.sql.Date;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
